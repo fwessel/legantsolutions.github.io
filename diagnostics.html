@@ -44,6 +44,47 @@
         h1 {
             text-align: center;
         }
+        h2 {
+            text-align: center;
+        }
+        h3 {
+            text-align: center;
+        }
+        h4 {
+            text-align: center;
+        }
+        h5 {
+            text-align: center;
+        }
+        h6 {
+            text-align: center;
+        }
+        .blink {
+            animation: blinker 1.0s linear infinite;
+            color: red;
+            font-size: 1.5em;
+            /* Larger, responsive font size */
+            margin-bottom: 20px;
+        }
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+        }
+        ul, ol{
+            margin:1.5cm;
+        }
+        .center-justified {
+            text-align: justify;
+            -moz-text-align-last: center;
+            text-align-last: center;
+        }
     </style>
 </head>
 
@@ -59,13 +100,13 @@
 </nav>
 
 <div class="navbar">
-    <a href="index.html" class="navbar-item no_underline">Home </a>
-    <a href="systems.html" class="navbar-item no_underline">Systems</a>
-    <a href="components.html" class="navbar-item no_underline">Components </a>
-    <a href="diagnostics.html" class="navbar-item no_underline">Diagnostics </a>
-    <a href="connect.html" class="navbar-item no_underline">Contact </a>
-    <!--                    <a href="/surplus.html" class="navbar-item no_underline">Surplus </a>-->
-    <a href="about.html" class="navbar-item no_underline">About</a>
+    <a href="index.html"  target="_blank"> Home </a>
+    <a href="diagnostics.html" target="_blank">Diagnostics</a>
+    <a href="systems.html" target="_blank"> Systems</a>
+    <a href="components.html" target="_blank">Components</a>
+    <a href="connect.html" target="_blank">Contact</a>
+    <a href="about.html" target="_blank">About</a>
+
 
     <!--    <div class="dropdown">-->
     <!--        <button class="dropbtn">Dropdown-->
@@ -77,103 +118,144 @@
     <!--            <a href="#">Link 3</a>-->
     <!--        </div>-->
     <!--    </div>-->
-</div>
+</div><br><br>
 
-<section class="section">
-    <div class="container has-text-centered-mobile">
-        <div class="content">
+<!--<section class="section">-->
+<!--    <div class="center-justified; blink">-->
+<!--&lt;!&ndash;    <div class="container has-text-centered-mobile; blink">&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="content">&ndash;&gt;-->
+<!--            PRODUCT CLOSE-OUT-->
+<!--        SALE PRICE: $25,000.00 </div>-->
+<!--    </div>-->
+<!--</section>-->
+        <div class="blink">
+            <h1><b>CLOSE-OUT SALE</b><br>
+                Second-Harmonic Dispersion Interferometer (SHDI),<br>
+                2-D Density Imaging Measurements in Plasma & Neutral Gas <br>
+                <b>PRICE: $28,900.00</b></h1>
+        </div>
+<!--<div class="container has-text-centered-mobile;></div>-->
+<!--    <div class="content"></div>-->
+<p>We are closing the SHDI product line, selling our laboratory instrument for a  deeply discounted price. This instrument is
+    useful for repetitively-pulsed, 2-dimensional, density-profile imaging/measurements in plasma and gas,
+    where the areal-electron density is: &int; n<sub>e</sub>xdl &ge; 10<sup>14</sup> cm<sup>-2</sup>, or the
+    areal-neutral density is: &int; n<sub>0</sub>xdl &ge; 10<sup>16</sup> cm<sup>-2</sup>. The SHDI's  lower-limit
+    sensitivity  depends on the  refractive index and thickness of the sample. The SHDI may also be used to quantify the thickness
+    of optically transparent mediums such as liquids and solids. Multiple papers have been published by our group documenting
+    the development of the SHDI and its use in the measurement of plasma density.<sup>1 - 5 </sup>
+    Download the SHDI Brochure <a href="docs/product-brochures/2D-SHDI_2020-2.pdf"><b>here</b>.</a></p><br>
 
-            <h1> Density Diagnostic for Plasma and Neutral Gas:</h1>
-            <h1>Second-Harmonic Dispersion-Interferometer (SHDI)</h1>
-            <h6 class="content"></h6>
 
-            <!--            <div class="content" , align="center">-->
-            <!--                <a href="#item1">1D-SHDI and Photo, </a>-->
-            <!--                <a href="#item2">2D-SHDI and Photo</a><br>-->
-            <!--            </div>-->
-            <!--            <h6>-->
-            The Figure shows a simplified diagram for the SHDI which uses a single laser beam source and homodyne detection.
-            The result is the SHDI has a common-beam path, in a design that is less complex, more stable, and lower cost.
-            The SHDI's lower limit sensitivity depends on the thickness and index of refraction of the sample and
-            SHDI's have been used to measure the density of neutral-gas jets and plasma electron density. Indeed, most optically
-            transparent and dispersive mediums can be sampled and measured, including liquids and solids.
-            <br/>
+<p>The operating principles for  the  SHDI  are schematically illustrated in the Figure shown below. The design uses
+    a single, primary laser beam source and homodyne detection, which provides  a common-beam path for all laser beams.
+    In the first crystal (SH1) a second harmonic is created from the primary beam, allowing the sample to be probed at two
+    wavelengths and producing a phase shift by optical dispersion. In the second crystal (SH2) another second harmonic is
+    created that reproduces the phase shift of the residual primary beam, allowing the dispersive-phase shift to be subsequently
+    measured between the two second-harmonic beams. The  result is a  single, common-path optical design that is immune to
+    mechanical and electrical noise, is less complex and lower cost than alternative (dual-beam line) interferometers. Moreover, the
+    entire instrument only needs one viewing path through the sample and can be mounted as two separable, lightweight components
+    on the experimental device, or  nearby with a direct line-of-sight.</p><br>
 
-            <img src="images/SHG2.png" alt="">
-            <br/>
-
-            The SHDI is currently available in two instrument configurations for:<br>
-            1-Dimensional, line-of-sight
-            measurements and for 2-Dimensional, transverse imaging. <br>
-            Photos of the 1D- and 2D-SHDIs are shown below.
-            The principal characteristics of the SHDIs are as follows:<br><br>
-            <!--            </h6>-->
+<img src="images/SHG2.png" alt="SHG", class="center">
+<p class="center-justified" ><b>Schematic illustration of a Second-Harmonic Dispersion Interferometer and its principles of operation.</b>
+</p>
+<br><br>
+                <p>The principal features and characteristics of the SHDI are as follows:</p>
             <ol>
-                <li> The instrument can measure large, and small sample sizes, from mm's - m's .</li>
-                <li> The time resolution can range from Δt ~ ns - seconds.</li>
-                <li> The phase resolution can range from, ΔΦ ~ 10<sup>-2</sup> - radians.</li>
-                <li> Bandwidth and sensitivity can be tailored for measurements.</li>
-                <li> The recording rate can approach 100's fps.</li>
+                <li> Large vibration isolation tables are unnecessary, the optical units may be mounted directly on the experiment.</li>
+                <li> The SHDI can measure large, and small sample sizes, with transverse dimensions from mm's - 10's of cm's .</li>
+                <li> The time resolution can range from  &#916 t ~ ns - seconds, using an appropriate laser.</li>
+                <li> The phase resolution measurement can range from as little as, &#916 &#966 ~ 10<sup>-2</sup> - radians.</li>
+                <li> Bandwidth and sensitivity can be tailored for CW or pulsed measurements.</li>
+                <li> The image recording times as short at 0.5 ns have been achieved.</li>
                 <li> User-friendly software provides for quick-image visualization and data analysis.</li>
-                <li> Large vibration isolation tables are unnecessary.</li>
-                <li> The optical units may be mounted directly on the experiment.</li>
-                <li> The system is designed for the application, in order to keep cost low.</li>
-                <li> The 2D SHDI can sample mm<sup>2</sup> – cm<sup>2</sup> areas.</li>
+                <li> A complete system can be custom designed for the application, in order to keep costs low.</li>
+<!--                <li> The 2D SHDI can sample mm<sup>2</sup>  to cm<sup>2</sup> areas.</li>-->
                 <li> Large sample gradients, beam deflections, and fringe jumps may limit the spatial resolution.</li>
+            </ol>
+<br>
 
-                <!--                </ul>-->
+<p>The  complete  SHDI is illustrated in the Figure below, with system  rigidly mounted in a ThorLabs cage system. In this
+    configuration the SHDI  produces a 7-mm diameter probe beam, with  the laser
+    mounted on the  right end of the Optical Unit 1 (OU1) cage system and the digital cameras (i.e., signal detectors)
+    mounted at the  left end of Optical Unit 2 (OU2).
+    The object shown at the center is a pulsed gas valve which produced an uncollimated gas jet injected into air, that was
+    sampled by the SHDI. The length of OU1 is approximately  400mm and the length of  OU2 is approximately 500 mm; the transverse width (for both OUs) is approximately 80 mm. The
+    laser-pulse duration is 0.6 ns and  the repetitive sampling rate is 100 fps.
 
+    Other components mounted in this system include: beam-line optics to adjust the diameter of the laser beam at various points in
+    the instrument; Thorlabs PIN photodiode to detect the beam; two LaB<sub>6</sub> second harmonic crystals (10 x 10 mm); two crystal-oven heaters;
+    a programmable two-channel oven controller; piezo-electric optical-phase controllers;  two Basler ACE 1920x1200 100 Hz
+    area scan digital cameras; a Quantum Composers 4-channel trigger unit to command trigger the laser and cameras;
+    two (12" x 24") optical breadboards.
 
-                <!--                <h1>-->
-                <h5>Download the <a href="docs/product-brochures/2D-SHDI_2020-2.pdf"> SHDI Brochure</a></h5>
-                <!--                    </h1>-->
-                <hr>
-                <h4 class="content">
-                    <!--            <div class="content">-->
-                    <a name="item1"></a>
-                    <h1> 1-Dimensional Line-of-Sight Measurements</h1>
-                    <div class="columns schedule is-vcentered">
-                        <div class="column is-1"></div>
-                        <div class="column is-one-third ">
-                            <!-- Start Products Section -->
-                            <img src="diagnostics/benchtop_setup.png" alt="">
-                        </div>
-                        <div class="column is-1"></div>
-                        <div class="column is-two-thirds" align="left">
-                            <ul> Length (Optical Unit1): 150 mm</ul>
-                            <ul> Length (Optical Unit2): 150 mm</ul>
-                            <ul> Width: 80 mm</ul>
-                            <ul> Bandwidth: &le; 1 MHz</ul>
-                            <ul>Electron Density: &int; n<sub>e</sub>xdl &ge; 10<sup>14</sup> cm<sup>-2</sup></h6>
-                            <ul>Neutral Density: &int; n<sub>0</sub>xdl &ge; 10<sup>16</sup> cm<sup>-2</sup></h6></ul>
-                        </div>
-                    </div>
-                    <hr>
+</p><br>
+            <img src="diagnostics/2DSHDI_photo.png" alt="SHG", class="center"><br><br>
+<p class="center-justified" ><b>SHDI configured to produce a 7-mm diameter, laser-probe beam.</b></p><br><br>
 
-                    <a name="item2"></a>
-                    <h1> 2-Dimensional Line-of-Sight Measurements</h1>
-                    <div class="columns schedule is-vcentered">
-                        <div class="column is-1"></div>
-                        <div class="column is-one-quarter" , align="left">
-                            <ul> Length: OU1 - 400mm, OU2 - 500 mm</ul>
-<!--                            <ul> Length (OU2): 500 mm</ul>-->
-                            <ul> Width: 80 mm</ul>
-                            <ul> Pulse Duration: 1 ns</ul>
-                            <ul> Sampling Rate: 100 fps</h6></ul>
-                            <ul> &int; n<sub>e</sub>xdl &ge; 10<sup>14</sup> cm<sup>-2</sup></h6></ul>
-                            <ul> &int; n<sub>0</sub>xdl &ge; 10<sup>16</sup> cm<sup>-2</sup></h6></ul>
-                        </div>
-                        <div class="column is-2"></div>
-                        <div class="column is-one-half ">
-                            <img src="diagnostics/2DSHDI_photo.png" alt="">
-                        </div>
-                        <!--                </div>-->
-                        <!--                <a href="documents/product-brochures/2D-SHDI_2020-2.pdf" download="LES">-->
-                        <!--                    <img src="images/Legant-Logo.png" alt="" width="208" height="284"></a>-->
-                        <!--            </div>-->
-                        <!--        </div>-->
-                        <hr>
-</section>
+<p>An enhanced version of the above SHDI is  shown in the Figure below and was used for density-profile imaging
+    of large-sample areas. The laser-beam diameter in this configuration was increased to 35-mm diameter,
+    with the beam expanded prior to entering the sample using a mirror-beam expandera and an identical combination
+    of mirror optics after the sample  to reduce the beam diameter. The beam optics is comprised  of a convex,
+    first-surface mirror and  an off-axis parabolic mirror to re-collimate the beam.
+
+</p><br>
+
+<img src="newItems/OU1side.png" alt="SHG", class="center"><br><br>
+<p class="center-justified" ><b>OU1 for the  35-mm beam diameter SHDI.</b></p><br><br>
+
+<img src="newItems/OU2side.png" alt="SHG", class="center"><br><br>
+<p class="center-justified" ><b>OU2 for the  35-mm beam diameter SHDI.</b></p><br><br>
+
+    The large-area beam SHDI embodied above demonstrates that the beam diameter can be significantly increased beyond these
+    levels, depending upon the availability of suitable mirrored components. A newer series of fast IO digital cameras allows the
+    design to be scaled to a kHz framing time, which provides near real time density imaging.
+</p><br><br>
+
+<p>The  SHDI system offered for sale here includes the all of the beam-line optics and hardware described above and illustrated
+    in the figures. Also included is an extra pair of  LaB<sub>6</sub>  crystals, as well as various extra optics mounts,
+    lenses, beam expanders, pinholes, cage-mount components, etc.
+    The combined price for all of these h/w components  is roughly one-third their original retail price.
+    The interferometer system also includes
+    the software operating system  that is used for system alignment and density measurement.
+    All software  is written in Python, for ease of understanding, maintenance, and modification.
+</p><br>
+
+<div class="blink">
+    <h2><b>CLOSE-OUT SALE</b><br>
+        Second-Harmonic Dispersion Interferometer (SHDI),<br>
+        2-D Density Imaging Measurements in Plasma & Neutral Gas <br>
+        <b>PRICE: $28,900.00</b></h2></div>
+<!--<br><br>-->
+<hr>
+
+<b>REFERENECES</b>
+<br>
+<sup>1</sup> F. Brandi, F. Giammanco, W. S. Harris, T. Roche, E. Trask, and F. J. Wessel,``Electron density
+    measurements of a field-reversed configuration plasma using a novel compact ultra-stable second-harmonic
+    interferometer,'' Review of Scientific Instruments, V.80, N.11, p. 113501, 2009.
+<a href="https://aip.scitation.org/doi/full/10.1063/1.3258199" target="_blank">https://aip.scitation.org/doi/full/10.1063/1.3258199</a><br>
+
+<sup>2</sup> F. Brandi, F. Wessel, C. Lohff, J. Duff, and Z. Haralson, ``Experimental study on the performances of
+    second-harmonic dispersion interferometers at 10.6 um and 1064 nm for plasma density measurements,''
+    Applied Optics, V.59, pp. 8486 - 8493, 2020. http://ao.osa.org/abstract.cfm?URI=ao-59-27-8486<br>
+<a href="http://ao.osa.org/abstract.cfm?URI=ao-59-27-8486" target="_blank">http://ao.osa.org/abstract.cfm?URI=ao-59-27-8486</a><br>
+
+<sup>3</sup> F. Brandi and F. J. Wessel, ``Widefield quantitative phase imaging by second-harmonic dispersion interferometry,''
+    Optics Letters, V.45, N.15, pp. 4304 - 4307, 2020.
+<a href="https://opg.optica.org/ol/fulltext.cfm?uri=ol-45-15-4304&id=433908"
+   target="_blank">https://opg.optica.org/ol/fulltext.cfm?uri=ol-45-15-4304&id=433908</a><br>
+
+<sup>4</sup> C. T. Chavez, A. Egly, I. Sepulveda, and F. J. Wessel, ``Measurement of 2D density profiles using a
+    second-harmonic, dispersion interferometer,'' Rev. Sci. Inst., V.94, N.2, p. 023503, 2023.
+<a href="https://doi.org/10.1063/5.0119896" target="_blank">https://doi.org/10.1063/5.0119896</a><br>
+
+<sup>5</sup> F. J. Wessel, C. T. Chavez, and A. Egly, ``Density-profile imaging using a second harmonic dispersion
+interferometer configured with reflective-beam expanders,'' Rev. Sci. Inst., V.95, N10,
+p. 103520, 2024.
+<a href="https://doi.org/10.1063/5.0218760" target="_blank">https://doi.org/10.1063/5.0218760</a><br>
+
+<hr>
 
 <footer class="footer has-text-centered has-text-centered-mobile">
     L-Egant Solutions, LLC, PO Box 16475, Irvine, CA 92623<br/>

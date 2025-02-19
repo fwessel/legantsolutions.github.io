@@ -96,8 +96,33 @@
         h1 {
             text-align: center;
         }
+        h2 {
+            text-align: center;
+        }
+        h3 {
+            text-align: center;
+        }
         h4 {
             text-align: center;
+        }
+        h5 {
+            text-align: center;
+        }
+        h6 {
+            text-align: center;
+        }
+        .blink {
+            animation: blinker 1.0s linear infinite;
+            color: red;
+            font-size: 1.5em;
+            /* Larger, responsive font size */
+            margin-bottom: 20px;
+        }
+
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
         }
     </style>
 </head>
@@ -114,13 +139,14 @@
 </nav>
 
 <div class="navbar">
-    <a href="index.html" class="navbar-item no_underline">Home </a>
-    <a href="systems.html" class="navbar-item no_underline">Systems</a>
-    <a href="components.html" class="navbar-item no_underline">Components </a>
-    <a href="diagnostics.html" class="navbar-item no_underline">Diagnostics </a>
-    <a href="connect.html" class="navbar-item no_underline">Contact </a>
+    <a href="index.html"  target="_blank"> Home </a>
+    <a href="diagnostics.html" target="_blank">Diagnostics</a>
+    <a href="systems.html" target="_blank"> Systems</a>
+    <a href="components.html" target="_blank">Components</a>
+    <a href="connect.html" target="_blank">Contact</a>
+    <a href="about.html" target="_blank">About</a>
     <!--                    <a href="/surplus.html" class="navbar-item no_underline">Surplus </a>-->
-    <a href="about.html" class="navbar-item no_underline">About</a>
+
 
     <!--    <div class="dropdown">-->
     <!--        <button class="dropbtn">Dropdown-->
@@ -134,78 +160,64 @@
     <!--    </div>-->
 </div>
 
-
 <section class="section">
     <div class="container has-text-centered-mobile">
         <div class="content">
 
             <h1> Pulsed, High-Voltage Systems, Components, and Diagnostics:</h1>
-            <h1> Solutions for Research, Engineering, and Technology</h1>
+            <h1> Cost Effective Solutions for Research, Engineering, and Technology</h1>
+            <!-- Start Diagnostics Section -->
             <hr>
-            <h5>L-Egant Solutions is the US representative for Zeonics Systech, who
-                manufactures a broad range of specialized (mostly custom),
-                high-voltage systems and components for research, commercial, and defense applications.
-                All of our products are manufactured to the highest standards of reliability and performance.
-                <a href="http://systechcapacitors.com/index.php" rel="noopener noreferrer" target="_blank">Zeonics Systech</a>
-                has been in business since 1981.</h5>
+            <div class="columns schedule is-vcentered">
+                <div class="column is-1"></div>
+                <div class="column is-one-third">
+                    <a href="diagnostics.html" class="blink"><h4>CLOSE-OUT SALE, LAST ONE</h4></a>
+<!--                    <a href="diagnostics.html" class="blink"><h4>LAST ONE</a></h4>-->
+                    <a href="diagnostics.html" class="no_underline"><h3>Laser Interferometer for <br>
+                        2-Dimensional Density Imaging in Plasma and Neutral Gas</h3></a><br>
+                    <a href="diagnostics.html" class="no_underline"><h5>35-mm beam diameter, 100 Hz, 1 ns,
+                        IR and visible laser  at 1064 nm & 532 nm</h5></a></div>
+<!--                    <a href="diagnostics.html" class="no_underline">1-D Interferometer (1-mm beam diameter, line-of-sight) </p></a>-->
+<!--                    <a href="diagnostics.html#item2" class="no_underline">2-D Interferometer (7-mm diameter, transverse image)</p></a><br></div>-->
+<!--                    <a href="diagnostics.html#item2" class="no_underline">2-D Interferometer (35-mm beam diameter, 2-D imaging)</p></a><br></div>-->
+                <div class="column is-2"></div>
+                <div class="column is-one-third"><img src="images/FRC.png"></div>
+                <div class="column is-3"></div>
+            </div>
             <hr>
-            <!-- Start Products Section -->
+
+            <!-- End Diagnostics Section -->
+            <!-- Begin HV Pulse Systems Section -->
             <div class="columns schedule is-vcentered">
                 <div class="column is-1"></div>
                 <div class="column is-one-fourth">
-                    <img src="images/spark-gaps.jpg" alt="Apologies, we are not currently able to load this image.">
-                </div>
+                    <img src="images/complete_rail_gap_system_compressed.jpeg" alt="Apologies, we are not currently able to load this image."></div>
                 <div class="column is-2"></div>
                 <div class="column is-one-third">
-
-
-                    <a href="systems.html" target="_blank"
-                       class="no_underline no_underline_on_hover"
-                       style="text-decoration: none; color : #4a4a4a;">
-                        <h4>High-Voltage Pulse Systems</h4>
-                        <p>Marx generators, PFNs, EMP, triggers, etc.</p><br>
-
-                    </a>
-                    <a href="components.html" target="_blank"
-                       class="no_underline no_underline_on_hover"
-                       style="text-decoration: none; color : #4a4a4a;">
-                        <h4>High-Voltage Components</h4>
-                        <p>Capacitors, diodes, resistors, etc.</p>
-                    </a>
-                    <br>
+                    <a href="systems.html"  class="no_underline"><h3>High-Voltage Pulse Systems</h3></a>
+                    <a href="systems.html" class="no_underline">
+                        <p> <h5>Rail Gaps, Spark Gaps, Marx Generators, Pulse Forming Networks, EM Pulsers, High Voltage Triggers, etc.</h5></p></a>
                 </div>
-                <div class="column is-1"></div>
             </div>
-            <!-- End Products Section -->
+            <!-- End HV Pulse Systems Section -->
 
+            <!-- Begin Components Section -->
             <hr>
-            <!-- Start Diagnostics Section -->
-
             <div class="columns schedule is-vcentered">
                 <div class="column is-1"></div>
                 <div class="column is-one-third ">
-
-                    <a href="diagnostics.html" target="_blank"
-                       class="no_underline no_underline_on_hover"
-                       style="text-decoration: none; color : #4a4a4a;">
-                        <h4>Plasma & Neutral Gas Density</h4>
-                        <p> 1-D Line-of-Sight Interferometer</p>
-                    </a>
-                    <a href="diagnostics.html" target="_blank"
-                       class="no_underline no_underline_on_hover"
-                       style="text-decoration: none; color : #4a4a4a;">
-                        <p> 2-D Imaging Interferometer</p>
-                    </a>
-                    <br>
+                    <a href="components.html" class="no_underline"><h3 >High-Voltage Components</h3></a>
+                    <a href="components.html" class="no_underline">
+                        <p><h5>Pulse Current Transformers, Capacitors, Diodes, Resistors, HV Wires/Connectors,  Shorting Sticks, etc.</h5></p></a>
                 </div>
                 <div class="column is-2"></div>
                 <div class="column is-one-third">
-                    <img src="images/FRC.png">
+                    <img src="images/spark-gaps.jpg">
                 </div>
-                <div class="column is-1"></div>
-            </div>
+<!--                <div class="column is-1"></div>-->
             <hr>
-            <!-- End Diagnostics Section -->
+            </div>
+            <!-- End HV Pulse Systems Section -->
 
             <!-- Start Surplus Section -->
             <!--                <div class="columns schedule is-vcentered">-->
